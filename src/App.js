@@ -14,6 +14,7 @@ import {FaTwitter,FaFacebookSquare,FaInstagram,FaPinterest,FaBars} from 'react-i
 
 function App() {
   const [show, setShow] = useState(false)
+  console.log(show)
   return (
     <div className="app">
       <section className='first'>
@@ -26,10 +27,9 @@ function App() {
                         <FaBars/>
                     </button>
                 </div>
+                
                 <div className='contain'>
-                {show && <div className='arrow up'></div>}
-                    <div className={show ? 'list-container show-container ' : 'list-container'}>
-                     
+                     <div className={show ? 'list-container show-container ' : 'list-container'}>
                      {/* eslint-disable */}
                     <div className='list'>
                          <a href='#'>about</a>
