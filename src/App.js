@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import './App.css';
-import orange from './desktop/image-header.jpg'
 import arrow from './images/icon-arrow-down.svg'
 import egg from './desktop/image-transform.jpg'
 import cup from './desktop/image-stand-out.jpg'
@@ -12,15 +11,12 @@ import Orange from './desktop/image-gallery-orange.jpg'
 import cone from './desktop/image-gallery-cone.jpg'
 import sugar from './desktop/image-gallery-sugarcubes.jpg'
 import {FaTwitter,FaFacebookSquare,FaInstagram,FaPinterest,FaBars} from 'react-icons/fa'
-import Navbar from './Navbar';
-
 
 function App() {
   const [show, setShow] = useState(false)
   return (
     <div className="app">
       <section className='first'>
-        {/* <img className='orange' src={orange} alt='orange'></img> */}
         <div className='navbar'>
         <nav className='sticky'>
             <div className='nav-center'>
@@ -33,12 +29,13 @@ function App() {
                 <div className='contain'>
                 {show && <div className='arrow up'></div>}
                     <div className={show ? 'list-container show-container ' : 'list-container'}>
-
+                     
+                     {/* eslint-disable */}
                     <div className='list'>
-                         <a>about</a>
-                         <a>project</a>
-                         <a>contact</a>
-                         <a>services</a>
+                         <a href='#'>about</a>
+                         <a href='#'>project</a>
+                         <a href='#'>contact</a>
+                         <a href='#'>services</a>
                     </div>
                 </div>
                 </div> 
@@ -59,6 +56,7 @@ function App() {
             <h2>Transform your brand</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet consectetur augue.
               Aliquam non lorem in neque pulvinar volutpat. Nulla vitae lacus vel velit dictum gravida quis sed erat.</p>
+              {/* eslint-disable */}
             <a className='learn-more' href='#'>learn more</a>
             </div>
         </div>
@@ -76,6 +74,7 @@ function App() {
             <h2>Transform your brand</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet consectetur augue.
               Aliquam non lorem in neque pulvinar volutpat. Nulla vitae lacus vel velit dictum gravida quis sed erat.</p>
+              {/* eslint-disable */}
             <a className='learn-more' href='#'>learn more</a>
             </div>
         </div>
@@ -151,9 +150,10 @@ function App() {
        <footer className='footer'>
            <h1 className='footer-title'>sunnyside</h1>
            <div className='footer-links'>
-                 <a>About</a>
-                 <a>Services</a>
-                 <a>Project</a>
+             {/* eslint-disable */}
+                 <a href='#'>About</a>
+                 <a href='#'>Services</a>
+                 <a href='#'>Project</a>
            </div>
            <div className='socials'>
                <div><FaFacebookSquare/></div>
